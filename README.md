@@ -39,7 +39,7 @@ Release 탭의 사운드뱅크는 내수용입니다.
 
   - 사용하는 키보드 버튼은 다음과 같습니다.
 
-    ![migano_keyboard](https://user-images.githubusercontent.com/26345945/172053403-73893f2e-8e4f-4d80-a46a-82a6838494ed.jpg)
+    ![migano_keyboard](https://user-images.githubusercontent.com/26345945/172056906-fc2ff7e1-bad1-4e38-b865-96f910c10f82.jpg)
 
     Q ~ ]키와 1~=키 : 대응하는 건반
 
