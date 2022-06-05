@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="vwxJrg" name="Sample Preprocessing Tool" projectType="guiapp"
+              useAppConfig="0" addUsingNamespaceToJuceHeader="0" displaySplashScreen="1"
+              jucerFormatVersion="1">
+  <MAINGROUP id="qyg4ol" name="Sample Preprocessing Tool">
+    <GROUP id="{7CD5AD57-49F6-C391-5C02-1E8C8BE915ED}" name="Source">
+      <FILE id="lqb625" name="ADSREnvelope.cpp" compile="1" resource="0"
+            file="Source/ADSREnvelope.cpp"/>
+      <FILE id="AEwsSQ" name="ADSREnvelope.h" compile="0" resource="0" file="Source/ADSREnvelope.h"/>
+      <FILE id="kSFVx5" name="AudioSound.h" compile="0" resource="0" file="Source/AudioSound.h"/>
+      <FILE id="x0TxBn" name="AudioVoice.h" compile="0" resource="0" file="Source/AudioVoice.h"/>
+      <FILE id="AymYa9" name="SynthAudioSource.h" compile="0" resource="0"
+            file="Source/SynthAudioSource.h"/>
+      <FILE id="PHG1MW" name="config.h" compile="0" resource="0" file="Source/config.h"/>
+      <FILE id="oTpioA" name="Knob.cpp" compile="1" resource="0" file="Source/Knob.cpp"/>
+      <FILE id="xM2WSP" name="Knob.h" compile="0" resource="0" file="Source/Knob.h"/>
+      <FILE id="gxuHGo" name="MidiKeyboard.cpp" compile="1" resource="0"
+            file="Source/MidiKeyboard.cpp"/>
+      <FILE id="L56Q2m" name="MidiKeyboard.h" compile="0" resource="0" file="Source/MidiKeyboard.h"/>
+      <FILE id="ZpTdNg" name="PitchShifter.cpp" compile="1" resource="0"
+            file="Source/PitchShifter.cpp"/>
+      <FILE id="TGDNeD" name="PitchShifter.h" compile="0" resource="0" file="Source/PitchShifter.h"/>
+      <FILE id="lBEulg" name="SampleUitls.h" compile="0" resource="0" file="Source/SampleUitls.h"/>
+      <FILE id="xfDHUz" name="SampleUtils.cpp" compile="1" resource="0" file="Source/SampleUtils.cpp"/>
+      <FILE id="gvarzN" name="WavetableCreator.cpp" compile="1" resource="0"
+            file="Source/WavetableCreator.cpp"/>
+      <FILE id="TNhbYX" name="WavetableCreator.h" compile="0" resource="0"
+            file="Source/WavetableCreator.h"/>
+      <FILE id="tsJoo2" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="aSpPE3" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="IQYXbD" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_USE_MP3AUDIOFORMAT="1"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022" externalLibraries="${SoundTouchLib}">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Sample Preprocessing Tool"
+                       headerPath="D:\Develop\Library\soundtouch-2.3.1\soundtouch-2.3.1\include"
+                       libraryPath="D:\Develop\Library\soundtouch-2.3.1\soundtouch-2.3.1\lib"
+                       defines="SoundTouchLib=SoundTouchD_x64.lib" useRuntimeLibDLL="0"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Sample Preprocessing Tool"
+                       headerPath="D:\Develop\Library\soundtouch-2.3.1\soundtouch-2.3.1\include"
+                       libraryPath="D:\Develop\Library\soundtouch-2.3.1\soundtouch-2.3.1\lib"
+                       defines="SoundTouchLib=SoundTouch_x64.lib" useRuntimeLibDLL="0"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>

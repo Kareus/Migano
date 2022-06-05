@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="WpXkVk" name="Migano" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              pluginCharacteristicsValue="pluginIsSynth,pluginProducesMidiOut,pluginWantsMidiIn"
+              bundleIdentifier="com.kareus.Migano" pluginManufacturer="Kareus"
+              aaxIdentifier="com.kareus.Migano" pluginFormats="buildAU,buildStandalone,buildVST,buildVST3">
+  <MAINGROUP id="f5Gl4n" name="Migano">
+    <GROUP id="{809DF817-9BAC-15E6-286D-CD53B077CC49}" name="Source">
+      <FILE id="mp1vo4" name="ADSREnvelope.cpp" compile="1" resource="0"
+            file="Source/ADSREnvelope.cpp"/>
+      <FILE id="WhPQXM" name="ADSREnvelope.h" compile="0" resource="0" file="Source/ADSREnvelope.h"/>
+      <FILE id="QgcCQ8" name="SampleUtils.cpp" compile="1" resource="0" file="Source/SampleUtils.cpp"/>
+      <FILE id="aK1cuD" name="SynthAudioSource.h" compile="0" resource="0"
+            file="Source/SynthAudioSource.h"/>
+      <FILE id="gbS7gE" name="AudioVoice.h" compile="0" resource="0" file="Source/AudioVoice.h"/>
+      <FILE id="T7oh5Q" name="AudioSound.h" compile="0" resource="0" file="Source/AudioSound.h"/>
+      <FILE id="yoaerE" name="Knob.cpp" compile="1" resource="0" file="Source/Knob.cpp"/>
+      <FILE id="O8hReY" name="Knob.h" compile="0" resource="0" file="Source/Knob.h"/>
+      <FILE id="NYR3Sh" name="SampleUitls.h" compile="0" resource="0" file="Source/SampleUitls.h"/>
+      <FILE id="um1smO" name="PitchShifter.h" compile="0" resource="0" file="Source/PitchShifter.h"/>
+      <FILE id="hW4GuK" name="PitchShifter.cpp" compile="1" resource="0"
+            file="Source/PitchShifter.cpp"/>
+      <FILE id="PuCsaU" name="WavetableOscillator.cpp" compile="1" resource="0"
+            file="Source/WavetableOscillator.cpp"/>
+      <FILE id="ZLyeMr" name="MidiKeyboard.cpp" compile="1" resource="0"
+            file="Source/MidiKeyboard.cpp"/>
+      <FILE id="JbpLNZ" name="MidiKeyboard.h" compile="0" resource="0" file="Source/MidiKeyboard.h"/>
+      <FILE id="g9wIAy" name="WavetableCreator.cpp" compile="1" resource="0"
+            file="Source/WavetableCreator.cpp"/>
+      <FILE id="cpQhtR" name="WavetableCreator.h" compile="0" resource="0"
+            file="Source/WavetableCreator.h"/>
+      <FILE id="iYJRgJ" name="WavetableOscillator.h" compile="0" resource="0"
+            file="Source/WavetableOscillator.h"/>
+      <FILE id="HuddcW" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="Jm4Nqk" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="yjM8sI" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="lYj9JA" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"
+               JUCE_USE_MP3AUDIOFORMAT="1"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Migano" useRuntimeLibDLL="0"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Migano" useRuntimeLibDLL="0"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Migano" useRuntimeLibDLL="0"
+                       winArchitecture="Win32"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../Download/juce-6.1.6-windows/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
