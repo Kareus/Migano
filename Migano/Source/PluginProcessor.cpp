@@ -54,6 +54,8 @@ MiganoAudioProcessor::MiganoAudioProcessor()
 #else
     readAllSoundBanks(SOUNDBANK_PATH);
 #endif
+
+    synth.setCurrentSoundIndex(presetID);
 }
 
 MiganoAudioProcessor::~MiganoAudioProcessor()

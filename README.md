@@ -11,7 +11,7 @@
 
 Release 탭의 사운드뱅크는 내수용입니다.
 
-현재 버전 : V1.0.0
+현재 버전 : V1.0.1
 
 
 
@@ -20,6 +20,8 @@ Release 탭의 사운드뱅크는 내수용입니다.
 - 오른쪽 Releases 탭에서 프로그램 (Migano.zip)과 사운드뱅크를 다운로드할 수 있습니다.
 
 - Migano.exe를 실행하면 악기를 연주할 수 있습니다.
+
+  - exe 파일은 64bit만 지원합니다.
 
   - ![directory](https://user-images.githubusercontent.com/26345945/172053729-1f3bb6ab-5b1f-4dc2-bb93-373658c177d4.png)
 
@@ -111,9 +113,9 @@ Release 탭의 사운드뱅크는 내수용입니다.
 
 DAW (작곡 프로그램)에 사용할 분들을 위한 추가 설명입니다.
 
-- Migano.dll (64비트) 혹은 Migano_x86.dll (32비트)를 DAW 프로그램에서 사용하는 VST2 폴더에 붙여넣으시고 로드하시면 됩니다.
+- Migano.dll (64bit) 혹은 Migano_x86.dll (32bit)를 DAW 프로그램에서 사용하는 VST2 폴더에 붙여넣으시고 로드하시면 됩니다.
 
-  Migano.vst3를 VST3 폴더에 붙여넣으셔도 됩니다.
+  Migano.vst3 (64bit only)를 VST3 폴더에 붙여넣으셔도 됩니다.
 
   두 경우 모두 사용할 MiganoSoundBank 폴더를 같은 위치에 넣어주세요.
 
