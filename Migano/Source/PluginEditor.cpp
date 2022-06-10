@@ -49,7 +49,8 @@ MiganoAudioProcessorEditor::MiganoAudioProcessorEditor (MiganoAudioProcessor& p,
     addAndMakeVisible(presets);
     presets.setTextWhenNoChoicesAvailable("No Preset Found.");
     presets.setTextWhenNothingSelected("Nothing");
-    presets.onChange = [this] {
+    presets.onChange = [this]
+    {
         int id = presets.getSelectedId() - 1;
         audioProcessor.setPresetID(id);
         knob.updateSound(synth->getCurrentAudioSound());
@@ -105,10 +106,18 @@ void MiganoAudioProcessorEditor::sliderValueChanged(juce::Slider* slider)
 
     if (synth->isAvailable())
     {
+        auto adsr = synth->getCurrentAudioSound()->getParameters();
         auto setting = synth->getCurrentAudioSound()->getSamplerSettings();
         knob.updateSampleInfoTo(setting);
         knob.updateADSRTo(synth->getADSRParameters());
         synth->updateADSR();
-    }
 
+        valueTreeState.getParameter("attack")->setValueNotifyingHost(adsr->attack);
+        valueTreeState.getParameter("decay")->setValueNotifyingHost(adsr->decay);
+        valueTreeState.getParameter("sustain")->setValueNotifyingHost(adsr->sustain);
+        valueTreeState.getParameter("release")->setValueNotifyingHost(adsr->release);
+
+        valueTreeState.getParameter("useLoop")->setValueNotifyingHost(setting->useLoop);
+        valueTreeState.getParameter("loop_resampleMode")->setValueNotifyingHost(setting->loop_resampleMode);
+    }
 }
