@@ -9,7 +9,7 @@
 
 프로그램 자체는 간단한 샘플러 플러그인이고, 사운드뱅크를 프로세싱하여 불러와서 사용할 수 있습니다.
 
-Release 탭의 사운드뱅크는 내수용입니다.
+사운드뱅크는 내수용입니다.
 
 현재 버전 : V1.0.2
 
@@ -18,6 +18,8 @@ Release 탭의 사운드뱅크는 내수용입니다.
 #### 설명 (일반)
 
 - 오른쪽 Releases 탭에서 프로그램 (Migano.zip)과 사운드뱅크를 다운로드할 수 있습니다.
+
+  - 혹은 이 페이지 맨 아래에서 사운드뱅크를 다운로드할 수 있습니다.
 
 - Migano.exe를 실행하면 악기를 연주할 수 있습니다.
 
@@ -132,6 +134,10 @@ DAW (작곡 프로그램)에 사용할 분들을 위한 추가 설명입니다.
 - Test Environment : FL Studio 20.9.2, VST2 64bit, Windows 10
 
 
+
+#### Soundbanks
+
+- [김나성](https://drive.google.com/file/d/1CbQqhTsn5iFGFhThP9-1iua9rLZ2_qJE/view?usp=sharing)
 
 #### Libraries
 
