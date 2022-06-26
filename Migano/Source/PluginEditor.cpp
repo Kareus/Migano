@@ -54,6 +54,7 @@ MiganoAudioProcessorEditor::MiganoAudioProcessorEditor (MiganoAudioProcessor& p,
         int id = presets.getSelectedId() - 1;
         audioProcessor.setPresetID(id);
         knob.updateSound(synth->getCurrentAudioSound());
+        saveState();
     };
 
     presets.addItemList(audioProcessor.getPresetList(), 1);
@@ -68,6 +69,7 @@ MiganoAudioProcessorEditor::MiganoAudioProcessorEditor (MiganoAudioProcessor& p,
         presets.setSelectedId(id + 1, juce::dontSendNotification);
         knob.init(synth->getCurrentAudioSound());
         synth->updateADSR();
+        saveState();
     }
 
     if (_STANDALONE)
@@ -104,6 +106,11 @@ void MiganoAudioProcessorEditor::sliderValueChanged(juce::Slider* slider)
 {
     knob.checkValid(); //start-end range limit check
 
+    saveState();
+}
+
+void MiganoAudioProcessorEditor::saveState()
+{
     if (synth->isAvailable())
     {
         auto adsr = synth->getCurrentAudioSound()->getParameters();

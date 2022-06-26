@@ -29,6 +29,8 @@ public:
     void paint (juce::Graphics&) override;
     void resized() override;
 
+    void saveState();
+
 private:
     std::string SOUNDBANK_PATH;
 
