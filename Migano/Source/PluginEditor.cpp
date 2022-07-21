@@ -119,10 +119,11 @@ void MiganoAudioProcessorEditor::saveState()
         knob.updateADSRTo(synth->getADSRParameters());
         synth->updateADSR();
 
-        valueTreeState.getParameter("attack")->setValueNotifyingHost(adsr->attack);
-        valueTreeState.getParameter("decay")->setValueNotifyingHost(adsr->decay);
+        //you should normalize the value
+        valueTreeState.getParameter("attack")->setValueNotifyingHost(adsr->attack / 5.0);
+        valueTreeState.getParameter("decay")->setValueNotifyingHost(adsr->decay / 5.0);
         valueTreeState.getParameter("sustain")->setValueNotifyingHost(adsr->sustain);
-        valueTreeState.getParameter("release")->setValueNotifyingHost(adsr->release);
+        valueTreeState.getParameter("release")->setValueNotifyingHost(adsr->release / 5.0);
 
         valueTreeState.getParameter("useLoop")->setValueNotifyingHost(setting->useLoop);
         valueTreeState.getParameter("loop_resampleMode")->setValueNotifyingHost(setting->loop_resampleMode);
